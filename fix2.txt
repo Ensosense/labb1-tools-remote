@@ -1,0 +1,59 @@
+ 187  mkdir tools-labb1
+  188  cd tools-labb1
+  189  ls
+  190  ls la
+  191  ls -la
+  192  git init
+  193  ls -la
+  194  touch readme.md
+  195  vi readme.md
+  196  git status
+  197  git add readme.md
+  198  git commit -m "initial commit"
+  199  git checkout -b feature1
+  200  vi readme.md
+  201  git status
+  202  git add readme.md
+  203  git commit -m "add animal from feature1"
+  204  git status
+  205  git checkout master
+  206  vi readme.md
+  207  git status
+  208  git add readme.md
+  209  git commit -m "modified readme from master"
+  210  git merge feature1
+  211  vi readme.md
+  212  git status
+  213  git add readme.md
+  214  git commit -m "merge, resolve conflict"
+  215  git log --oneline
+  216  git tag extinct
+  217  git tag
+  218  git log --oneline
+  219  git reset --hard HEAD~1
+  220  git log --oneline
+  221  cat readme.md
+  222  git branch feature2
+  223  git status
+  224  vi readme.md
+  225  git status
+  226  git add readme.md
+  227  git commit -m "modified readme from master"
+  228  git checkout feature2
+  229  touch fix1.txt
+  230  git status
+  231  git add fix1.txt
+  232  git commit -m "add fix1"
+  233  touch fix2.txt
+  234  git add fix2.txt
+  235  git commit -m "add fix2"
+  236  git status
+  237  git checkout master
+  238  ls
+  239  git log --oneline
+  240  git reflog
+  241  git cherry-pick 7323e09
+  242  git log --oneline
+  243  history
+
+
