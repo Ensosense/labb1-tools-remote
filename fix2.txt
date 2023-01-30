@@ -56,4 +56,13 @@
   242  git log --oneline
   243  history
 
+  245  git remote add origin git@github.com:Ensosense/labb1-tools-remote.git
+  246  git remote -v
+  247  git push --all origin
+  248  git push --tags
+  249  git status
+  250  git add .
+  251  git commit -m "add history in fix2"
+  252  vi fix2.txt
+  253  history
 
